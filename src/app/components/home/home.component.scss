@@ -1,14 +1,15 @@
 .filters {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 20px auto;
-    padding-left: 20px;
+    padding-left: 20em;
   }
   
   ::ng-deep {
     .mat-form-field-infix {
-      background-color: #3f51b5;
+      width: 250px !important;
+      background-color: #051c31;
     }
-  
+
     .mat-select-value,
     .mat-select-arrow,
     .mat-form-field-hide-placeholder .mat-select-placeholder,
@@ -44,23 +45,25 @@
   .game {
   width: 280px;
   margin: 10px;
-  height: 330px;
+  height: 280px;
   overflow: hidden;
   border-radius: 5px;
   background-color: #202020;
-  box-shadow: 4px 3px 8px 0px rgb(200 152 44 / 22%);
-  transition-duration: 0.3s;
+  box-shadow: 4px 3px 8px 0px rgba(18, 46, 59, 0.22);
+  transition-duration: 0.8s;
   cursor: pointer;
 
   &:hover {
-    box-shadow: 4px 3px 11px 6px rgb(200 152 44 / 46%);
-    transform: translateY(-3px);
+    box-shadow: 4px 3px 11px 6px rgba(206, 203, 198, 0.46);
+    transform: scale(1.5);
+    z-index: 5;
+    //transform: translateY(-3px);
   }
 
   &-thumb-container {
     background-color: #000;
     position: relative;
-    height: 172px;
+    height: 122px;
     color: #fff;
     text-align: center;
   }

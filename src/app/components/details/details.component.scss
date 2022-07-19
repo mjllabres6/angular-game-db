@@ -43,12 +43,19 @@
   
   .game {
     &-banner {
-      height: 442px;
+      height: 642px;
       overflow: hidden;
   
       &-img {
         width: 100%;
-        filter: blur(5px);
+        filter: blur(10px);
+        filter: brightness(50%);
+        transition: 0.7s;
+      }
+      &-img:hover {
+        filter: blur(0px);
+        filter: brightness(100%);
+        
       }
     }
   
@@ -60,7 +67,7 @@
   
     &-header {
       &-title {
-        font-size: 70px;
+        font-size: 100px;
         color: #fff;
         font-weight: 700;
         line-height: 70px;
